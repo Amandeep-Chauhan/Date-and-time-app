@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <link rel="stylesheet" href="color.css">
+    <title>Document</title>
+</head>
+
+<body class="body-color">
+    <!-- navigation -->
+    <div class="nav">
+        <div class="navbar">
+            <a class="nav-btn" href="#timebtn">DATE/TIME</a>
+            <a class="nav-btn" href="#stopwatch-btn">STOPWATCH</a>
+            <button class="nav-btn dark-mode">DARK MODE</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <!-- TIME -->
+        <div id="timebtn" class="time">
+            <div class="time-frame">
+                <div class="calender-main" id="calender">
+                    <div class="calender">
+                        <div class="day box1">
+                            <p id="day"></p>
+                        </div>
+                        <div class="date box1">
+                            <p id="date"></p>
+                        </div>
+                        <div class="month box1">
+                            <p id="mnt"></p>
+                        </div>
+                        <div class="year box1">
+                            <p id="yr"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timer-main" id="timer-main">
+                    <div class="timer" id="timer">
+                        <div class="hour box">
+                            <p id="hr"> </p>
+                            <span>hour</span>
+                        </div>
+
+                        <div class="dot">:</div>
+
+                        <div class="minutes box">
+                            <p id="min"></p>
+                            <span>min</span>
+                        </div>
+
+                        <div class="dot">:</div>
+
+                        <div class="seconds box">
+                            <p id="sec"></p>
+                            <span>second</span>
+                        </div>
+
+                        <div class="dot">:</div>
+
+                        <div class="milliseconds box">
+                            <p id="ms"></p>
+                            <span>millisecond</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- STOPWATCH -->
+        <div id="stopwatch-btn" class="stopwatch">
+            <div id="timerContainer">
+                <div class="timertime" onclick="startTimer()">STOPWATCH !</div>
+
+                <div class="btns">
+                    <div class="startTimer reset" onclick="startTimer()">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="pauseTimer reset" onclick="pauseTimer()">
+                        <i class="fas fa-pause"></i>
+                    </div>
+                    <div class="resetTimer reset" onclick="resetTimer()">Reset</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
